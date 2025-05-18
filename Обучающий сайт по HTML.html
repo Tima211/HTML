@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обучающий курс по HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        main {
+            flex: 3;
+            padding: 1rem;
+        }
+        aside {
+            flex: 1;
+            padding: 1rem;
+            background: #f4f4f4;
+        }
+        .editor-container {
+            margin: 2rem 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .editor-toolbar {
+            background: #f4f4f4;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .editor-toolbar button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .editor-toolbar button:hover {
+            background: #45a049;
+        }
+        #html-code {
+            width: 100%;
+            height: 200px;
+            font-family: 'Courier New', monospace;
+            padding: 0.5rem;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            resize: vertical;
+        }
+        #result {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        .lesson {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Обучающий курс по HTML</h1>
+        <p>Изучайте основы HTML и практикуйтесь в реальном времени</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#basics">Основы</a></li>
+            <li><a href="#text">Текст</a></li>
+            <li><a href="#links">Ссылки</a></li>
+            <li><a href="#images">Изображения</a></li>
+            <li><a href="#tables">Таблицы</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <main>
+            <section id="basics" class="lesson">
+                <h2>Основы HTML</h2>
+                <p>HTML (HyperText Markup Language) - это язык разметки для создания веб-страниц.</p>
+                <p>Каждый HTML-документ начинается с декларации типа документа <code>&lt;!DOCTYPE html&gt;</code>.</p>
+                <p>Основная структура HTML-документа:</p>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Заголовок страницы&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    Содержание страницы
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+            </section>
+            
+            <section id="text" class="lesson">
+                <h2>Работа с текстом</h2>
+                <p>Для форматирования текста в HTML используются различные теги:</p>
+                <ul>
+                    <li><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code> - заголовки разного уровня</li>
+                    <li><code>&lt;p&gt;</code> - абзац</li>
+                    <li><code>&lt;strong&gt;</code> - <strong>жирный</strong> текст</li>
+                    <li><code>&lt;em&gt;</code> - <em>курсив</em></li>
+                    <li><code>&lt;br&gt;</code> - перенос строки</li>
+                </ul>
+            </section>
+            
+            <div class="editor-container">
+                <div class="editor-toolbar">
+                    <h3>Практический редактор</h3>
+                    <button id="run-btn">Запустить код</button>
+                </div>
+                <textarea id="html-code" placeholder="Введите ваш HTML-код здесь...">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Моя страница&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+    &lt;p&gt;Это мой первый HTML-документ.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+                <iframe id="result"></iframe>
+            </div>
+            
+            <section id="links" class="lesson">
+                <h2>Ссылки</h2>
+                <p>Для создания ссылок используется тег <code>&lt;a&gt;</code>:</p>
+                <pre>&lt;a href="https://example.com"&gt;Текст ссылки&lt;/a&gt;</pre>
+                <p>Атрибут <code>href</code> указывает адрес, на который ведет ссылка.</p>
+            </section>
+            
+            <section id="images" class="lesson">
+                <h2>Изображения</h2>
+                <p>Для вставки изображений используется тег <code>&lt;img&gt;</code>:</p>
+                <pre>&lt;img src="image.jpg" alt="Описание изображения"&gt;</pre>
+                <p>Атрибут <code>src</code> указывает путь к изображению, <code>alt</code> - альтернативный текст.</p>
+            </section>
+            
+            <section id="tables" class="lesson">
+                <h2>Таблицы</h2>
+                <p>Таблицы создаются с помощью тегов <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> и <code>&lt;td&gt;</code>:</p>
+                <pre>
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Заголовок 1&lt;/th&gt;
+        &lt;th&gt;Заголовок 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Ячейка 1&lt;/td&gt;
+        &lt;td&gt;Ячейка 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                </pre>
+            </section>
+        </main>
+        
+        <aside>
+            <h3>Советы</h3>
+            <ul>
+                <li>Всегда закрывайте теги</li>
+                <li>Используйте отступы для читаемости кода</li>
+                <li>Проверяйте валидность кода</li>
+                <li>Комментируйте сложные участки</li>
+            </ul>
+            
+            <h3>Ресурсы</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">MDN HTML</a></li>
+                <li><a href="https://html.spec.whatwg.org/" target="_blank">HTML стандарт</a></li>
+                <li><a href="https://validator.w3.org/" target="_blank">Валидатор HTML</a></li>
+            </ul>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Обучающий курс по HTML. Все права защищены.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('run-btn').addEventListener('click', function() {
+            const htmlCode = document.getElementById('html-code').value;
+            const resultFrame = document.getElementById('result');
+            const resultDoc = resultFrame.contentDocument || resultFrame.contentWindow.document;
+            
+            resultDoc.open();
+            resultDoc.write(htmlCode);
+            resultDoc.close();
+        });
+        
+        // Запустить код при загрузке страницы
+        window.addEventListener('load', function() {
+            document.getElementById('run-btn').click();
+        });
+    </script>
+</body>
+</html>
