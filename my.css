@@ -124,26 +124,6 @@
             color: var(--primary-color);
         }
 
-       /* Ссылки */
-       .links1 {
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-decoration: none;
-            cursor: pointer;
-            letter-spacing: normal;
-            padding: 30px 0;
-            margin-top: 50px;
-            margin-bottom: 10px;
-            text-color: #f8f8ff;
-       }
-
-       .links2 {
-            padding: 30px 0;
-            margin-top: 50px;
-            margin-bottom: 10px;
-            text-color: #333;
-       }
-
         /* Подвал */
         footer {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
