@@ -126,6 +126,11 @@
 
        /* Ссылки */
        .links1 {
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            letter-spacing: normal;
             padding: 30px 0;
             margin-top: 50px;
             margin-bottom: 10px;
