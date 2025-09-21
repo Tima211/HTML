@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <title>Погода<title>
+  </head>
+  <body>  
+    <div class="header">
+      <h2>Погода  в Усть-Илимске</h2>
+    </div>
+    <div class="nuipogoda-html-informer">
+      <div>Температура
+        <span data-nuipogoda="in-city"></span>
+      </div>
+      <div>Сейчас:
+        <span data-nuipogoda="temp"></span>
+      </div>
+      <div data-nuipogoda="day1">Завтра:
+        <span data-nuipogda="temp"></span>
+      </div>
+      <a title="НУ И ПОГОДА" href="https://ust-ilimsk.nuipogoda.ru">НУ И ПОГОДА</a>
+    </div>
+    <script>(function(a,f,g) {var
+      e=a.createElement(f);e.async=1;e.src=g;a=a.getElementsByTagName(f)[0];a.parentNode.insertBefore(e,a)})
+      (document,'script','//nuipogoda.ru/informer/nuipogoda.js')</script>
+  </body>
