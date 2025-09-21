@@ -24,3 +24,4 @@
       e=a.createElement(f);e.async=1;e.src=g;a=a.getElementsByTagName(f)[0];a.parentNode.insertBefore(e,a)})
       (document,'script','//nuipogoda.ru/informer/nuipogoda.js')</script>
   </body>
+</html>
