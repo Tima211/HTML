@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дипломная работа Тимофеевой Анастасии</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
-    <link href="my.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Шапка сайта с навигацией -->
     <header>
         <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#works">Работы</a></li>
-                <li><a href="#links">Ссылки</a></li>
-            </ul>
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#links">Ссылки</a></li>
+                    <li><a href="#works">Работы</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -27,38 +29,130 @@
         </div>
     </section>
 
-    <!-- Секция "Работы" -->
-    <section id="works" class="works-section">
-        <div class="container">
-            <h2 class="section-title">Мои работы</h2>
-        </div>
-    </section>
-
     <!-- Секция "Ссылки" -->
     <section id="links" class="links-section">
         <div class="container">
             <h2 class="section-title">Полезные ссылки</h2>
-            <p align="center"><a href="https://stackblitz.com/">StackBlitz</a></p>
-            <p align="center"><a href="https://www.deepseek.com/en">DeepSeek</a></p>
-            <p align="center"><a href="https://www.figma.com/design/crwDF1FgIANkhBkUSdX1go/Intensive_main_screen?m=auto&t=bbgc0hMh9HKLt0Cx-6">Самостоятельная работа 1</a></p>
-            <p align="center"><a href="https://www.figma.com/design/9sfp1KHuFxGTrlOAc3f3ud/%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%B2%D0%B8%D0%BA-%D1%81%D0%B0%D0%B9%D1%82%D0%B0-%D0%BD%D0%B0-Figma?m=auto&t=bbgc0hMh9HKLt0Cx-6">Черновик сайта на Figma</a></p>
-            <p align="center"><a href="https://www.figma.com/design/kG0mS2C6l88Lm2CoDekrbO/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0?m=auto&t=bbgc0hMh9HKLt0Cx-6">Контрольная работа</a></p>
-            <p align="center"><a href="https://www.figma.com/design/qjceOQ1oFJYJbqow8G308x/%D0%91%D1%83%D0%BA%D0%BB%D0%B5%D1%82?m=auto&t=bbgc0hMh9HKLt0Cx-6">Буклет</a></p>
-            <p align="center"><a href="https://www.figma.com/design/lJEaE7ZXNIdyhyMsqUGvAz/%D0%90%D1%84%D0%B8%D1%88%D0%B0?m=auto&t=bbgc0hMh9HKLt0Cx-6">Афиша</a></p>
-            <p align="center"><a href="https://www.figma.com/design/nT3iyuFlXfOpuNZ9C4FSvZ/%D0%A1%D0%B0%D0%BC%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0?m=auto&t=bbgc0hMh9HKLt0Cx-6">Самостоятельная работа 2</a></p>
-            <p align="center"><a href="">Погода</a></p>
-            <p align="center"><a href="https://tima211.github.io/Fonts/">Сайт о популярных шрифтах</a></p>
-            <p align="center"><a href="https://magvi.ai/storage/images/preview/27784/d5ba77c7-121e-4a09-9486-e6e78a341473.png">Катрочка товара</a></p>
-            <p align="center"><a href="https://tima211.github.io/antivirus./">Антивирус</a></p>
-            <p align="center"><a href="https://tima211.github.io/framer/">Framer</a></p>
+            
+            <!-- Плашки с платформами -->
+            <div class="platforms">
+                <a href="https://github.com" class="platform-badge github" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://figma.com" class="platform-badge figma" target="_blank">
+                    <i class="fab fa-figma"></i>
+                    <span>Figma</span>
+                </a>
+                <a href="https://codepen.io" class="platform-badge codepen" target="_blank">
+                    <i class="fab fa-codepen"></i>
+                    <span>CodePen</span>
+                </a>
+                <a href="https://stackblitz.com" class="platform-badge stackblitz" target="_blank">
+                    <i class="fas fa-bolt"></i>
+                    <span>StackBlitz</span>
+                </a>
+                <a href="https://stackblitz.com" class="platform-badge stackblitz" target="_blank">
+                    <i class="fas fa-bolt"></i>
+                    <span>StackBlitz</span>
+                </a>
+            </div>
+            
+            <!-- Сетка ссылок -->
+            <div class="links-grid">
+                <div class="link-card">
+                    <a href="https://www.deepseek.com/en" target="_blank">StackBlitz</a>
+                    <p>ИИ-ассистент для помощи в разработке и обучении</p>
+                    <span class="link-type">ИИ-инструмент</span>
+                </div>
+                
+                <div class="link-card">
+                    <a href="https://www.figma.com/design/crwDF1FgIANkhBkUSdX1go/Intensive_main_screen?m=auto&t=bbgc0hMh9HKLt0Cx-6" target="_blank">Самостоятельная работа 1</a>
+                    <p>Дизайн главного экрана для интенсива</p>
+                    <span class="link-type">Figma • Дизайн</span>
+                </div>
+                
+                <div class="link-card">
+                    <a href="https://www.figma.com/design/9sfp1KHuFxGTrlOAc3f3ud/%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%B2%D0%B8%D0%BA-%D1%81%D0%B0%D0%B9%D1%82%D0%B0-%D0%BD%D0%B0-Figma?m=auto&t=bbgc0hMh9HKLt0Cx-6" target="_blank">Черновик сайта на Figma</a>
+                    <p>Прототип и черновик сайта в Figma</p>
+                    <span class="link-type">Figma • Прототип</span>
+                </div>
+                
+                <div class="link-card">
+                    <a href="https://www.figma.com/design/kG0mS2C6l88Lm2CoDekrbO/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0?m=auto&t=bbgc0hMh9HKLt0Cx-6" target="_blank">Контрольная работа</a>
+                    <p>Контрольная работа по веб-дизайну</p>
+                    <span class="link-type">Figma • Работа</span>
+                </div>
+                
+                <div class="link-card">
+                    <a href="https://www.figma.com/design/qjceOQ1oFJYJbqow8G308x/%D0%91%D1%83%D0%BA%D0%BB%D0%B5%D1%82?m=auto&t=bbgc0hMh9HKLt0Cx-6" target="_blank">Буклет</a>
+                    <p>Дизайн буклета в Figma</p>
+                    <span class="link-type">Figma • Полиграфия</span>
+                </div>
+                
+                <div class="link-card">
+                    <a href="https://www.figma.com/design/lJEaE7ZXNIdyhyMsqUGvAz/%D0%90%D1%84%D0%B8%D1%88%D0%B0?m=auto&t=bbgc0hMh9HKLt0Cx-6" target="_blank">Афиша</a>
+                    <p>Дизайн афиши для мероприятия</p>
+                    <span class="link-type">Figma • Дизайн</span>
+                </div>
+                
+                <div class="link-card">
+                    <a href="https://www.figma.com/design/nT3iyuFlXfOpuNZ9C4FSvZ/%D0%A1%D0%B0%D0%BC%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0?m=auto&t=bbgc0hMh9HKLt0Cx-6" target="_blank">Самостоятельная работа 2</a>
+                    <p>Вторая самостоятельная работа по дизайну</p>
+                    <span class="link-type">Figma • Работа</span>
+                </div>
+                
+                <div class="link-card">
+                    <a href="#" target="_blank">Погода</a>
+                    <p>Приложение для отображения погоды</p>
+                    <span class="link-type">Приложение</span>
+                </div>
+                
+                <div class="link-card">
+                    <a href="https://tima211.github.io/Fonts/" target="_blank">Сайт о популярных шрифтах</a>
+                    <p>Обзор популярных веб-шрифтов и их применение</p>
+                    <span class="link-type">Веб-сайт • Типографика</span>
+                </div>
+                
+                <div class="link-card">
+                    <a href="https://magvi.ai/storage/images/preview/27784/d5ba77c7-121e-4a09-9486-e6e78a341473.png" target="_blank">Карточка товара</a>
+                    <p>Дизайн карточки товара для интернет-магазина</p>
+                    <span class="link-type">UI • Дизайн</span>
+                </div>
+                
+                <div class="link-card">
+                    <a href="https://tima211.github.io/antivirus./" target="_blank">Антивирус</a>
+                    <p>Лендинг для антивирусного ПО</p>
+                    <span class="link-type">Веб-сайт</span>
+                </div>
+                
+                <div class="link-card">
+                    <a href="https://tima211.github.io/framer/" target="_blank">Framer</a>
+                    <p>Сайт о возможностях Framer</p>
+                    <span class="link-type">Веб-сайт • Инструмент</span>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Секция "Работы" -->
+    <section id="works" class="works-section">
+        <div class="container">
+            <h2 class="section-title">Мои работы</h2>
+            <div class="works-placeholder">
+                <h3>Раздел в разработке</h3>
+                <p>В этом разделе будут представлены ключевые проекты и работы, выполненные в рамках дипломного исследования. Секция находится в стадии наполнения и будет доступна в ближайшее время.</p>
+                <div class="coming-soon">СКОРО</div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Подвал сайта -->
     <footer>
         <div class="container">
             <p>© 2025 Дипломная работа Тимофеевой Анастасии</p>
             <p>Научный руководитель: Колосов Андрей Николаевич</p>
+            <p>Специальность: Веб-технологии и дизайн</p>
         </div>
     </footer>
 </body>
