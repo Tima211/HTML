@@ -193,6 +193,31 @@
         
         .stackblitz { color: #1266DB; }
         .stackblitz:hover { color: #1266DB; border-color: #1266DB; }
+        
+        .deepseek { color: #3B82F6; }
+        .deepseek:hover { color: #3B82F6; border-color: #3B82F6; }
+
+        /* DeepSeek иконка стиль */
+        .deepseek-icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .deepseek-icon::after {
+            content: 'DS';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
 
         /* Links Section */
         .links-section {
@@ -338,6 +363,15 @@
             .section-title {
                 font-size: 2.2rem;
             }
+            
+            .platforms {
+                gap: 1rem;
+            }
+            
+            .platform-badge {
+                padding: 0.9rem 1.5rem;
+                font-size: 1rem;
+            }
         }
 
         @media (max-width: 768px) {
@@ -370,6 +404,7 @@
             .platform-badge {
                 width: 90%;
                 max-width: 300px;
+                justify-content: center;
             }
             
             .links-grid {
@@ -390,5 +425,9 @@
             
             .section-title {
                 font-size: 1.9rem;
+            }
+            
+            .platform-badge {
+                padding: 0.8rem 1.2rem;
             }
         }
