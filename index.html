@@ -6,7 +6,7 @@
     <title>Дипломная работа Тимофеевой Анастасии</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
+ <style>
         :root {
             --primary: #6C63FF;
             --secondary: #4A44C6;
@@ -205,6 +205,9 @@
         
         .deepseek { color: #3B82F6; }
         .deepseek:hover { color: #3B82F6; border-color: #3B82F6; }
+        
+        .gemini { color: #4285F4; }
+        .gemini:hover { color: #4285F4; border-color: #4285F4; }
 
         /* DeepSeek иконка стиль */
         .deepseek-icon {
@@ -226,6 +229,28 @@
             font-size: 10px;
             font-weight: bold;
             letter-spacing: 0.5px;
+        }
+
+        /* Gemini иконка стиль */
+        .gemini-icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #4285F4 0%, #34A853 33%, #FBBC05 66%, #EA4335 100%);
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .gemini-icon::after {
+            content: 'G';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
         }
 
         /* Links Section */
@@ -490,6 +515,10 @@
                 <a href="https://www.deepseek.com" class="platform-badge deepseek" target="_blank">
                     <div class="deepseek-icon"></div>
                     <span>DeepSeek</span>
+                </a>
+                <a href="https://gemini.google.com" class="platform-badge gemini" target="_blank">
+                    <div class="gemini-icon"></div>
+                    <span>Google Gemini</span>
                 </a>
             </div>
             
